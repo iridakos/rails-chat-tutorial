@@ -13,7 +13,7 @@
         <div class="chat-message-container">
           <div class="row no-gutters">
             <div class="col-auto text-center">
-              <img src="<%= gravatar_url(room_message.user) %>" class="avatar" alt="">
+              <img src="<%= room_message.user.gravatar_url %>" class="avatar" alt="">
             </div>
 
             <div class="col">
