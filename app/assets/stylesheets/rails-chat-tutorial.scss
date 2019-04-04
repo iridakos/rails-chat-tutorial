@@ -19,6 +19,27 @@
   background: lighten($secondary, 50%);
   height: 50vh;
   border-radius: 5px 5px 0 0;
+  overflow-y: auto;
+
+  .chat-message-container {
+    padding: 5px;
+
+    .avatar {
+      margin: 5px;
+    }
+
+    .message-content {
+      padding: 5px;
+      border: 1px solid $primary;
+      border-radius: 5px;
+      background: lighten($primary, 10%);
+      color: $white;
+    }
+
+    & + .chat-message-container {
+      margin-top: 10px;
+    }
+  }
 }
 
 .chat-input {
