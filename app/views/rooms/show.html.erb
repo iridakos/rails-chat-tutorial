@@ -8,7 +8,7 @@
   </div>
 
   <div class="col">
-    <div class="chat" data-channel-subscribe="room" data-room-id="<%= @room.id %>">
+    <div id="chat-messages" class="chat" data-channel-subscribe="room" data-room-id="<%= @room.id %>">
       <% @room_messages.each do |room_message| %>
         <div class="chat-message-container">
           <div class="row no-gutters">
